@@ -12,7 +12,8 @@ const path=require("path")
 // app.set("views", path.join(__dirname,"/views")); to access the views from the parent directory
 
 app.get("/ig/:username",(req,res)=>{
+    const followers=["ketaki","aakansha","mrunmayi","sayali","neha","bhumi"];
     const {username}=req.params;
-    res.render("username.ejs",{username})
+    res.render("username.ejs",{username,followers})
 })
 
