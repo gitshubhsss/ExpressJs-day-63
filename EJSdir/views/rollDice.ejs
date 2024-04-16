@@ -6,6 +6,9 @@
     <title>roll dice</title>
 </head>
 <body>
-    <h1>Number is : <%= diceNum %> </h1>
+    <h1>diceNum is :<%=diceNum%></h1>
+    <% if (diceNum==6) { %>
+     <h1>Nice Roll Dice Again: <%= diceNum %></h1>
+    <% } %>
 </body>
 </html>
